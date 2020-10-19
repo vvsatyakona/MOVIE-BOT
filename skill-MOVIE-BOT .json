@@ -1,0 +1,1124 @@
+{
+  "intents": [
+    {
+      "intent": "BOOKING",
+      "examples": [
+        {
+          "text": "booking"
+        },
+        {
+          "text": "booking options"
+        },
+        {
+          "text": "options for booking"
+        },
+        {
+          "text": "show booking"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "ENQUIRY",
+      "examples": [
+        {
+          "text": "available movies"
+        },
+        {
+          "text": "can you provide the list of movies available"
+        },
+        {
+          "text": "can you provide with the movies available"
+        },
+        {
+          "text": "different movies"
+        },
+        {
+          "text": "different movies available"
+        },
+        {
+          "text": "list"
+        },
+        {
+          "text": "list of movies available"
+        },
+        {
+          "text": "movies"
+        },
+        {
+          "text": "movies available"
+        },
+        {
+          "text": "movies list"
+        },
+        {
+          "text": "offers"
+        },
+        {
+          "text": "offers available"
+        },
+        {
+          "text": "timing"
+        },
+        {
+          "text": "types of movies available"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Greetings",
+      "examples": [
+        {
+          "text": "Good Afternoon"
+        },
+        {
+          "text": "Good Evening"
+        },
+        {
+          "text": "Good Morning"
+        },
+        {
+          "text": "HAI"
+        },
+        {
+          "text": "Hello"
+        },
+        {
+          "text": "hi"
+        }
+      ],
+      "description": ""
+    }
+  ],
+  "entities": [
+    {
+      "entity": "BOOKING",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "booking ticket",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ticket for movie",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "email",
+      "values": [
+        {
+          "type": "patterns",
+          "value": "email",
+          "patterns": [
+            "[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,}$"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "ENQUIRY",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "movies",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "offers",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "show",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "timings",
+          "synonyms": [
+            "showtimings",
+            "show timings"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "types",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Greetings",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Good Afternoon",
+          "synonyms": [
+            "Ga",
+            "gda",
+            "gudmng"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Good Evening",
+          "synonyms": [
+            "gdmng",
+            "ge",
+            "gudmng"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Good Morning",
+          "synonyms": [
+            "gdmng",
+            "Gm",
+            "gudmng"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "PAYMENT",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "CARD",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "NET BANKING",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "PAYTM",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "UPI",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "seats",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "ROW",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ROW1",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ROW2",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ROW3",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "SNUMBER",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "SEAT1",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "SEAT10",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "SEAT2",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "SEAT3",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "SEAT4",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "SEAT5",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "SEAT6",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "SEAT7",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "SEAT8",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "SEAT9",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-number",
+      "values": [],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "TICKETS",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "CHAKDE INDIA",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "DILBECHARA",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "MS DHONI",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "MY SPY",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "super 30",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "tickets",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "tickets available",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    }
+  },
+  "dialog_nodes": [
+    {
+      "type": "standard",
+      "title": "Anything else",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I didn't understand. You can try rephrasing."
+              },
+              {
+                "text": "Can you reword your statement? I'm not understanding."
+              },
+              {
+                "text": "I didn't get your meaning."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "anything_else",
+      "dialog_node": "Anything else",
+      "previous_sibling": "node_1_1602687575364",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "ENTER  AS SEAT NUMBER LIKE 1"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_6_1602692441584",
+      "conditions": "@seats:ROW1",
+      "event_name": "filled",
+      "dialog_node": "handler_10_1602694287843",
+      "previous_sibling": "handler_7_1602692441592"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_1_1602687575364",
+      "event_name": "focus",
+      "dialog_node": "handler_1_1602690982867",
+      "previous_sibling": "node_3_1602696761410"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "ENTER  AS SEAT NUMBER LIKE 1"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_6_1602692441584",
+      "conditions": "@seats:ROW3",
+      "event_name": "filled",
+      "dialog_node": "handler_2_1602694379533",
+      "previous_sibling": "handler_7_1602694366949"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "title": "SELECT ONE OF THE ROW SEATS BOOKING",
+            "options": [
+              {
+                "label": "ROW1",
+                "value": {
+                  "input": {
+                    "text": "ROW1"
+                  }
+                }
+              },
+              {
+                "label": "ROW2",
+                "value": {
+                  "input": {
+                    "text": "ROW2"
+                  }
+                }
+              },
+              {
+                "label": "ROW3",
+                "value": {
+                  "input": {
+                    "text": "ROW3"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "slot_7_1602689547717",
+      "event_name": "focus",
+      "dialog_node": "handler_4_1602689547726",
+      "previous_sibling": "handler_5_1602689547726"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_1_1602693289819",
+      "context": {
+        "PAYMENT": "@PAYMENT"
+      },
+      "conditions": "@PAYMENT",
+      "event_name": "input",
+      "dialog_node": "handler_4_1602693289824"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_7_1602689547717",
+      "context": {
+        "seats": "@seats"
+      },
+      "conditions": "@seats",
+      "event_name": "input",
+      "dialog_node": "handler_5_1602689547726"
+    },
+    {
+      "type": "event_handler",
+      "title": "handler_6_1602687801851_copy",
+      "output": {},
+      "parent": "slot_9_1602687801845_copy",
+      "context": {
+        "TICKETS": "@TICKETS"
+      },
+      "conditions": "@TICKETS",
+      "event_name": "input",
+      "dialog_node": "handler_6_1602687801851_copy"
+    },
+    {
+      "type": "event_handler",
+      "title": "handler_7_1602687801851_copy",
+      "output": {
+        "generic": [
+          {
+            "title": "SELECT YOUR MOVIE",
+            "options": [
+              {
+                "label": "CHAKDE INDIA",
+                "value": {
+                  "input": {
+                    "text": "CHAKDE INDIA"
+                  }
+                }
+              },
+              {
+                "label": "MS DHONI",
+                "value": {
+                  "input": {
+                    "text": "MS DHONI"
+                  }
+                }
+              },
+              {
+                "label": "SUPER 30",
+                "value": {
+                  "input": {
+                    "text": "SUPER 30"
+                  }
+                }
+              },
+              {
+                "label": "DILBECHARA",
+                "value": {
+                  "input": {
+                    "text": "DILBECHARA"
+                  }
+                }
+              },
+              {
+                "label": "MY SPY",
+                "value": {
+                  "input": {
+                    "text": "MY SPY"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          },
+          {
+            "title": "",
+            "source": "https://assetscdn1.paytm.com/images/catalog/view_item/526795/1602614462394.jpg",
+            "response_type": "image"
+          },
+          {
+            "source": "https://assetscdn1.paytm.com/images/catalog/view_item/526795/1602614462394.jpg",
+            "response_type": "image"
+          }
+        ]
+      },
+      "parent": "slot_9_1602687801845_copy",
+      "event_name": "focus",
+      "dialog_node": "handler_7_1602687801851_copy",
+      "previous_sibling": "handler_6_1602687801851_copy"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "ENTER SEAT NUMBER AS \"SEAT FALLOWED BY NUMBER\" EXAMPLE:-\"SEAT1\" "
+              },
+              {
+                "text": "ONLY 10 SEATS IN A ROW AND ENTER SEATS BASED ON NUMBER OF SEATS YOU BOOKED"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "slot_6_1602692441584",
+      "event_name": "focus",
+      "dialog_node": "handler_7_1602692441592",
+      "previous_sibling": "handler_8_1602692441592"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "ENTER  AS SEAT NUMBER LIKE 1"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_6_1602692441584",
+      "conditions": "@seats:ROW2",
+      "event_name": "filled",
+      "dialog_node": "handler_7_1602694366949",
+      "previous_sibling": "handler_10_1602694287843"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "How many would you like to book the seats?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "slot_7_1602696010396",
+      "event_name": "focus",
+      "dialog_node": "handler_7_1602696010403",
+      "previous_sibling": "handler_9_1602696010403"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_6_1602692441584",
+      "context": {
+        "NUMBER": "@SNUMBER"
+      },
+      "conditions": "@SNUMBER",
+      "event_name": "input",
+      "dialog_node": "handler_8_1602692441592"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "TRY TO PAY BY CARD OR NET BANKING OR UPI OR  PAYTM. WHAT IS MODE OF PAYMENT"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "slot_1_1602693289819",
+      "event_name": "focus",
+      "dialog_node": "handler_8_1602693289824",
+      "previous_sibling": "handler_4_1602693289824"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_7_1602696010396",
+      "context": {
+        "number": "@sys-number"
+      },
+      "conditions": "@sys-number",
+      "event_name": "input",
+      "dialog_node": "handler_9_1602696010403"
+    },
+    {
+      "type": "frame",
+      "title": "BOOKING",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Thank You.Your Booking  of seats $number .  the receipt is sent to $email . "
+              },
+              {
+                "text": "ENJOY THE SHOW"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "metadata": {
+        "_customization": {
+          "mcr": false
+        }
+      },
+      "next_step": {
+        "behavior": "skip_user_input"
+      },
+      "conditions": "#BOOKING || @BOOKING",
+      "digress_in": "returns",
+      "dialog_node": "node_1_1602687575364",
+      "digress_out": "allow_all",
+      "previous_sibling": "node_2_1602676508377",
+      "digress_out_slots": "allow_returning"
+    },
+    {
+      "type": "standard",
+      "title": "ENQUIRY",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#ENQUIRY || @ENQUIRY",
+      "digress_in": "returns",
+      "dialog_node": "node_2_1602676508377",
+      "digress_out": "allow_all",
+      "previous_sibling": "node_5_1602672795500"
+    },
+    {
+      "type": "standard",
+      "title": "delete context",
+      "output": {
+        "deleted": "<?context.remove('email')?><?context.remove('BOOKING')?><?context.remove('number')?><?context.remove('PAYMENT')?><?context.remove('TICKETS')?><?context.remove('seats')?><?context.remove('SNUMBER')?><?context.remove('movies')?>",
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1602687575364",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "Welcome"
+      },
+      "conditions": "true",
+      "dialog_node": "node_3_1602696761410"
+    },
+    {
+      "type": "standard",
+      "title": "GREETINGS",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "Welcome"
+      },
+      "conditions": "#Greetings || @Greetings",
+      "dialog_node": "node_5_1602672795500",
+      "previous_sibling": "Welcome"
+    },
+    {
+      "type": "standard",
+      "title": "MAILID",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hello, Your mail Id  $email is taken for future reference. How may I help You?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "Welcome",
+      "context": {
+        "email": "@email.literal"
+      },
+      "conditions": "@email",
+      "dialog_node": "node_5_1602695366585"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Good Afternoon"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1602672795500",
+      "conditions": "@Greetings:(Good Afternoon)",
+      "dialog_node": "response_10_1602674285097",
+      "previous_sibling": "response_2_1602674269913"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Good Morning"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1602672795500",
+      "conditions": "@Greetings:(Good Morning)",
+      "dialog_node": "response_1_1602674125357"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Good Evening"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1602672795500",
+      "conditions": "@Greetings:(Good Evening)",
+      "dialog_node": "response_2_1602674269913",
+      "previous_sibling": "response_1_1602674125357"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "PLEASE ENTER \"BOOKING\" IN CHAT BOX FOR BOOKING MOVIE TICKET"
+              },
+              {
+                "text": "APPLICABLE OFFERS "
+              },
+              {
+                "text": "1.FOR FAMILY PASS SAVE UP TO 250 RUPEES BY FAMILY PASS @Rs 59/-"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          },
+          {
+            "title": "2",
+            "source": "https://in.bmscdn.com/offers/tncbanner/icici-bank-25percent-discount-offer-icicicc520.jpg?12102020095709",
+            "response_type": "image"
+          },
+          {
+            "title": "3",
+            "source": "https://in.bmscdn.com/offers/tncbanner/citi-bank-mastercard-offer-citimc0420.jpg?22092020160904",
+            "response_type": "image"
+          },
+          {
+            "title": "4",
+            "source": "https://in.bmscdn.com/offers/tncbanner/axis-bank-edebit-card-offer-axsvrdc420.jpg?12062020122358",
+            "response_type": "image"
+          },
+          {
+            "title": "5",
+            "source": "https://in.bmscdn.com/offers/tncbanner/sbisimclik.jpg?04012017151200",
+            "response_type": "image"
+          }
+        ]
+      },
+      "parent": "node_2_1602676508377",
+      "conditions": "@ENQUIRY:offers",
+      "dialog_node": "response_2_1602678612062",
+      "previous_sibling": "response_5_1602678482629"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "11 AM [NOON SHOW]"
+              },
+              {
+                "text": "2AM [MATNEE]"
+              },
+              {
+                "text": "5AM [FIRST SHOW]"
+              },
+              {
+                "text": "8AM [SECOND SHOW]"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_2_1602676508377",
+      "conditions": "@ENQUIRY:timings",
+      "dialog_node": "response_2_1602680680069",
+      "previous_sibling": "response_2_1602678612062"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Orey Bujjiga ",
+            "source": "https://static.toiimg.com/thumb/msid-74084337,width-219,height-317,imgsize-85765/74084337.jpg",
+            "response_type": "image"
+          },
+          {
+            "title": "Nishabdham",
+            "source": "https://i2.wp.com/www.socialnews.xyz/wp-content/uploads/2019/11/01/Nishabdam-movie-new-poster-.jpg?quality=90&zoom=1&ssl=1",
+            "response_type": "image"
+          },
+          {
+            "title": "V",
+            "source": "https://i0.wp.com/www.socialnews.xyz/wp-content/uploads/2020/02/10/Nani-and-Sudheer-Babu-s-V-Movie-Flagship-poster-.jpg?quality=90&zoom=1&ssl=1",
+            "response_type": "image"
+          },
+          {
+            "title": "Monster Trucks",
+            "source": "https://static.toiimg.com/thumb/msid-61948056,width-219,height-317,imgsize-136547/61948056.jpg",
+            "response_type": "image"
+          },
+          {
+            "title": "Aavesham",
+            "source": "https://static.toiimg.com/thumb/msid-61965080,width-219,height-317,imgsize-93613/61965080.jpg",
+            "response_type": "image"
+          }
+        ]
+      },
+      "parent": "node_2_1602676508377",
+      "conditions": "@ENQUIRY:types",
+      "dialog_node": "response_5_1602678482629",
+      "previous_sibling": "response_9_1602676567707"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "HAI"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1602672795500",
+      "conditions": "anything_else",
+      "dialog_node": "response_7_1602674334933",
+      "previous_sibling": "response_10_1602674285097"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1602687575364",
+      "disabled": true,
+      "dialog_node": "response_7_1602688090517",
+      "previous_sibling": "handler_1_1602690982867"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "CHAKDE INDIA",
+            "source": " https://i.pinimg.com/originals/24/ea/af/24eaafa07440ddb3ea1524ad4c8856d0.jpg",
+            "description": "The film starts in Nidudavolu as Bujji's(Raj Tarun) parents fix a match for him. Upset with this, he leaves his town. During the same time, Krishnaveni(Malavika Nair) also runs away to Hyderabad for the same reason.",
+            "response_type": "image"
+          },
+          {
+            "title": "MS DHONI",
+            "source": "https://i.pinimg.com/originals/2e/b4/0d/2eb40db67c97eb1ee56ff6804cc7f8ef.jpg",
+            "description": "M S Dhoni, a boy from Ranchi, aspires to play cricket for India. Though he initially tries to please his father by working for the Indian Railways, he ultimately decides to chase his dreams.",
+            "response_type": "image"
+          },
+          {
+            "title": "super 30",
+            "source": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSn4GZBBSxDjhOtl-b8jC-68DkvDG7F8_1xZw&usqp=CAU",
+            "description": "Super 30, as readers may be aware, is based on the life of Anand Kumar, who set up a coaching institution to prepare poor students in Patna for the IIT-JEE",
+            "response_type": "image"
+          },
+          {
+            "title": "DILBECHARA",
+            "source": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSpIPioGU3A0QhZm2M33nnovi2s3mD0dN1CMQ&usqp=CAU",
+            "description": "Kizie and Manny are poles apart in personality and their battle against cancer is the only common thread binding them",
+            "response_type": "image"
+          },
+          {
+            "title": "MY SPY",
+            "source": "https://images-na.ssl-images-amazon.com/images/I/41tfdxM5gWL._AC_.jpg",
+            "description": "Nine-year-old Sophie catches JJ, a hardened CIA operative, spying on her family during a routine surveillance operation. ",
+            "response_type": "image"
+          }
+        ]
+      },
+      "parent": "node_2_1602676508377",
+      "conditions": "@ENQUIRY:movies",
+      "dialog_node": "response_9_1602676567707"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_1_1602687575364",
+      "variable": "$PAYMENT",
+      "dialog_node": "slot_1_1602693289819",
+      "previous_sibling": "slot_6_1602692441584"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_1_1602687575364",
+      "variable": "$NUMBER",
+      "dialog_node": "slot_6_1602692441584",
+      "previous_sibling": "slot_7_1602696010396"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_1_1602687575364",
+      "variable": "$seats",
+      "dialog_node": "slot_7_1602689547717",
+      "previous_sibling": "slot_9_1602687801845_copy"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_1_1602687575364",
+      "variable": "$number",
+      "dialog_node": "slot_7_1602696010396",
+      "previous_sibling": "slot_7_1602689547717"
+    },
+    {
+      "type": "slot",
+      "title": "slot_9_1602687801845_copy",
+      "output": {},
+      "parent": "node_1_1602687575364",
+      "variable": "$TICKETS",
+      "dialog_node": "slot_9_1602687801845_copy",
+      "previous_sibling": "response_7_1602688090517"
+    },
+    {
+      "type": "standard",
+      "title": "Welcome",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "HELLO. I AM MOVIE BOT CAPABLE OF SHOWING DIFFERENT LIST OF MOVIES AND TIMINGS,AND BOOKING OPTIONS.HOW CAN I HELP YOU?"
+              },
+              {
+                "text": "PLEASE ENTER \"MOVIES\" FOR TO SHOW MOVIES AVAILABLE"
+              },
+              {
+                "text": "PLEASE ENTER \"OFFERS\" FOR TO SHOW OFFERS AVAILABLE"
+              },
+              {
+                "text": "PLEASE ENTER \"TIMINGS\"OR \"SHOW TIMINGS\" FOR TO SHOW TIMINGS"
+              },
+              {
+                "text": "PLEASE ENTER \"BOOKING\" FOR BOOKING OF TICKET"
+              },
+              {
+                "text": "May I know your name and mail ID?.NAME AND MAILID  MUST "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "conditions": "welcome || @email",
+      "digress_in": "does_not_return",
+      "dialog_node": "Welcome",
+      "digress_out": "allow_all_never_return"
+    }
+  ],
+  "counterexamples": [],
+  "system_settings": {
+    "off_topic": {
+      "enabled": true
+    },
+    "disambiguation": {
+      "prompt": "Did you mean:",
+      "enabled": true,
+      "randomize": true,
+      "max_suggestions": 5,
+      "suggestion_text_policy": "title",
+      "none_of_the_above_prompt": "None of the above"
+    },
+    "system_entities": {
+      "enabled": true
+    },
+    "human_agent_assist": {
+      "prompt": "Did you mean:"
+    },
+    "spelling_auto_correct": true
+  },
+  "learning_opt_out": false,
+  "name": "MOVIE BOT",
+  "language": "en",
+  "description": ""
+}
